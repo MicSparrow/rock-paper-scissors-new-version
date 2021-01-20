@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Rock, paper, scissors - the game</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="subtitles">
+        <h1>ROCK, PAPER, SCISSORS </h1><br>
+        <h2>Choose one by clicking the button below</h2>
+      </div>
+      <div class="list">
+        <h3>
+          <center>Rules:</center>
+        </h3>
+        <ul>
+          <li>After selecting one of the three choices computer also selects its own choice.</li>
+          <li>Rock beats scissors.</li>
+          <li>Scissors beat paper.</li>
+          <li>Paper beats rock.</li>
+          <li>The game ends when the player or the computer achieves 5 points.</li>
+          <li>When there's a tie, both the player and the computer achieve 1 point.</li>
+        </ul><br>
+      </div>
+      <div class="threeButtons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div><br>
+      <div class="results">
+        <h4>Game results:</h4>
+        <center>
+          <table>
+            <tr>
+              <th>Player</th>
+              <th>Computer</th>
+            </tr>
+             <tr>
+              <td id="playerChoice"></td>
+              <td id="computerChoice"></td>
+            </tr>
+            <tr>
+              <td id="playerScore">0</td>
+              <td id="computerScore">0</td>
+            </tr>
+            <tr>
+              <td colspan="2">Round result:</td>
+            </tr>
+             <tr>
+              <td id="roundResult" colspan="2"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Final result:</strong></td>
+            </tr>
+            <tr>
+              <td id="finalResult" colspan="2"></td>
+            </tr>
+          </table>
+        </center>
+        <br><button id="again">Play Again!</button>
+      </div>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+
+</html>
